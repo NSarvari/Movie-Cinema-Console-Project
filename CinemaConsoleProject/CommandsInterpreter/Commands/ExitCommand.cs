@@ -1,10 +1,7 @@
-﻿using CinemaConsoleProject.CommandsInterpreter.Commands.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CinemaConsoleProject.CommandsInterpreter.Commands
+﻿namespace CinemaConsoleProject.CommandsInterpreter.Commands
 {
+    using CinemaConsoleProject.CommandsInterpreter.Commands.Interfaces;
+    using System;
     public class ExitCommand : ICommand
     {
         public string Execute(string[] inputArgs)

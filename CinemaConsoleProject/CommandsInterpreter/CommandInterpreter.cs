@@ -1,13 +1,10 @@
-﻿using CinemaConsoleProject.CommandsInterpreter.Commands.Interfaces;
-using CinemaConsoleProject.CommandsInterpreter.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-
-namespace CinemaConsoleProject.CommandsInterpreter
+﻿namespace CinemaConsoleProject.CommandsInterpreter
 {
+    using CinemaConsoleProject.CommandsInterpreter.Commands.Interfaces;
+    using CinemaConsoleProject.CommandsInterpreter.Interfaces;
+    using System;
+    using System.Linq;
+    using System.Reflection;
     public class CommandInterpreter : ICommandInterpreter
     {
         private const string Suffix = "command";
