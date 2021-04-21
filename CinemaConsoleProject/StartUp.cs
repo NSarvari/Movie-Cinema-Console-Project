@@ -1,5 +1,6 @@
 ﻿namespace CinemaConsoleProject
 {
+    using CinemaConsoleProject.Engine;
     using CinemaConsoleProject.Models.Interfaces;
     using CinemaConsoleProject.Models.Movies.Interfaces;
     using CinemaConsoleProject.Repositories;
@@ -11,12 +12,11 @@
         static void Main()
         {
             IServiceProvider serviceProvider = ConfigureServices();
-            Console.WriteLine("Hello");
         }
         private static IServiceProvider ConfigureServices()
         {
             var serviceCollection = new ServiceCollection();
-
+            serviceCollection.AddTransient<IEngine, Engine>();
             serviceCollection.AddSingleton<IRepository<IMovie>, MovieRepository>();
             serviceCollection.AddSingleton<IRepository<IHourPeriod>, HourPeriordRepository>();
 
