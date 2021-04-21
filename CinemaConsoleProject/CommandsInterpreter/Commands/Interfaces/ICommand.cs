@@ -1,4 +1,4 @@
-﻿namespace CinemaConsoleProject.CommandInterpreter.Commands.Interfaces
+﻿namespace CinemaConsoleProject.CommandsInterpreter.Commands.Interfaces
 {
     public interface ICommand
     {

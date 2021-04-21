@@ -1,13 +1,14 @@
 ﻿namespace CinemaConsoleProject.Engine
 {
-    using CinemaConsoleProject.CommandInterpreter.Interfaces;
     using System;
     using Microsoft.Extensions.DependencyInjection;
+    using CinemaConsoleProject.Engine.Interfaces;
+    using CinemaConsoleProject.CommandsInterpreter.Interfaces;
 
-    public class Engine : IEngine
+    public class StartEngine : IEngine
     {
         private readonly IServiceProvider _serviceProvider;
-        public Engine(IServiceProvider serviceProvider)
+        public StartEngine(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
         }

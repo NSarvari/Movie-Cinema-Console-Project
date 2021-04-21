@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CinemaConsoleProject.CommandInterpreter.Interfaces
+namespace CinemaConsoleProject.CommandsInterpreter.Interfaces
 {
     public interface ICommandInterpreter
     {

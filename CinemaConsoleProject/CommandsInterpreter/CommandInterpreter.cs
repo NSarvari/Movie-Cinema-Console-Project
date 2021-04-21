@@ -1,11 +1,12 @@
-﻿using CinemaConsoleProject.CommandInterpreter.Interfaces;
+﻿using CinemaConsoleProject.CommandsInterpreter.Commands.Interfaces;
+using CinemaConsoleProject.CommandsInterpreter.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace CinemaConsoleProject.CommandInterpreter
+namespace CinemaConsoleProject.CommandsInterpreter
 {
     public class CommandInterpreter : ICommandInterpreter
     {

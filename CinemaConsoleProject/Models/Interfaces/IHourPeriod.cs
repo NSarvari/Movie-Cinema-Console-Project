@@ -7,7 +7,6 @@ namespace CinemaConsoleProject.Models.Interfaces
 {
     public interface IHourPeriod
     {
-        string CurrentHour { get; }
         IMovieList MovieList { get; }
     }
 }

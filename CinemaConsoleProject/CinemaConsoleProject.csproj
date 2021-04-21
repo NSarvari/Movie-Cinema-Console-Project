@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.14" />
   </ItemGroup>
 
 </Project>
