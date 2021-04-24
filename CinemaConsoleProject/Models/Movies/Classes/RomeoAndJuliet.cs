@@ -1,10 +1,6 @@
-﻿using CinemaConsoleProject.Models.Movies.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CinemaConsoleProject.Models.Movies.Classes
+﻿namespace CinemaConsoleProject.Models.Movies.Classes
 {
+    using CinemaConsoleProject.Models.Movies.Abstractions;
     public class RomeoAndJuliet : Movie
     {
         private const string RomeoAndJulietHallNumber = "VIP";

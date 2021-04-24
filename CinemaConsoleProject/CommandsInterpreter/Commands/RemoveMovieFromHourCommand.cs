@@ -1,5 +1,4 @@
-﻿
-namespace CinemaConsoleProject.CommandsInterpreter.Commands
+﻿namespace CinemaConsoleProject.CommandsInterpreter.Commands
 {
     using CinemaConsoleProject.CommandsInterpreter.Commands.Interfaces;
     using CinemaConsoleProject.Models.Interfaces;

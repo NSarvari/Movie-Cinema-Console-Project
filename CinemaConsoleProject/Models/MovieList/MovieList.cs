@@ -31,7 +31,8 @@
         }
         public override string ToString()
         {
-            return string.Join(",", _movies.Select(m => m.GetType().Name));
+            var movie = _movies.Select(m => new[] {m.GetType().Name, m.HallNumber}).SelectMany(teams => teams).ToArray();
+            return $"Movie: {movie[0]} HallNumber: {movie[1]}";
         }
     }
 }
