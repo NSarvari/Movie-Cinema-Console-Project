@@ -10,6 +10,8 @@
     using CinemaConsoleProject.Engine.Interfaces;
     using CommandsInterpreter;
     using CinemaConsoleProject.CommandsInterpreter.Interfaces;
+    using CinemaConsoleProject.Factories;
+    using CinemaConsoleProject.Factories.Interfaces;
 
     public class StartUp
     {
@@ -23,7 +25,11 @@
         {
             var serviceCollection = new ServiceCollection();
 
+            serviceCollection.AddTransient<IMovieFactory, MovieFactory>();
+            serviceCollection.AddTransient<IHourPeriodFactory, HourPeriodFactory>();
+
             serviceCollection.AddTransient<ICommandInterpreter, CommandInterpreter>();
+            
             serviceCollection.AddTransient<IEngine, StartEngine>();
 
             serviceCollection.AddSingleton<IRepository<IMovie>, MovieRepository>();

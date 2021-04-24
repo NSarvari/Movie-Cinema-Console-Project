@@ -16,9 +16,16 @@
         {
             while (true)
             {
+                try
+                {
                 var inputArray = Console.ReadLine().Split(" ",StringSplitOptions.RemoveEmptyEntries);
                 var result = _serviceProvider.GetService<ICommandInterpreter>().Read(inputArray);
                 Console.WriteLine(result);
+                }
+                catch(ArgumentException arg)
+                {
+                    Console.WriteLine(arg.Message);
+                }
             }
         }
     }
