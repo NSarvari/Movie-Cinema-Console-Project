@@ -19,7 +19,7 @@
             var movieType = inputArgs[0];
             var movie = _movieFactory.Create(movieType);
             _movieRepository.Add(movie);
-            return string.Format($"Successfully added: {movie.GetType().Name}");
+            return $"Successfully added: {movie.GetType().Name}";
         }
     }
 }
