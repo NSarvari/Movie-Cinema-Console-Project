@@ -2,6 +2,6 @@
 {
     public interface IMovie
     {
-        string HallNumber { get; }
+        string Director { get; }
     }
 }

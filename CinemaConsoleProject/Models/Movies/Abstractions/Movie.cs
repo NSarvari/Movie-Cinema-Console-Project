@@ -4,21 +4,21 @@
     using Validator;
     public abstract class Movie : IMovie
     {
-        private string _hallNumber;
+        private string _director;
         public Movie(string hallNumber)
         {
-            _hallNumber = hallNumber;
+            _director = hallNumber;
         }
-        public string HallNumber
+        public string Director
         {
             get
             {
-                return _hallNumber;
+                return _director;
             }
             private set
             {
-                Validator.ThrowAnExceptionIfObjectIsNull(nameof(this.HallNumber), value);
-                _hallNumber = value;
+                Validator.ThrowAnExceptionIfObjectIsNull(nameof(this.Director), value);
+                _director = value;
             }
         }
     }

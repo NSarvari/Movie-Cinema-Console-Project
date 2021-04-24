@@ -3,8 +3,8 @@
     using CinemaConsoleProject.Models.Movies.Abstractions;
     public class RomeoAndJuliet : Movie
     {
-        private const string RomeoAndJulietHallNumber = "VIP";
-        public RomeoAndJuliet() : base(RomeoAndJulietHallNumber)
+        private const string RomeoAndJulietDirector = "Carlo Carlei";
+        public RomeoAndJuliet() : base(RomeoAndJulietDirector)
         {
 
         }
